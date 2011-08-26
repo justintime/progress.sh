@@ -27,11 +27,15 @@ The second argument is optional, and it's an integer representing what the maxim
 Output
 ------
 Given:
+
     $ ./progress.sh "grep -c 'this is a record' ./log.log" 241831
     Current=21.10/sec	TotalAvg=21.14/sec	Total=182424/241831 75.00%	46.83 mins left
 
 21.10 is the average of how many units per second were processed in the most recent interval.
+
 21.14 is the average of how many units per second have been processed since the script started.
+
 182424 is the total number of units processed.
+
 241831 is the total number of units to process (the second argument to the script)
 
